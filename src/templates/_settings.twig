@@ -1,0 +1,12 @@
+{# @var plugin \juni\twigcomponents\TwigComponents #}
+{# @var settings \juni\twigcomponents\models\Settings #}
+
+{% import '_includes/forms.twig' as forms %}
+
+{{ forms.textField({
+    first: true,
+    label: 'Component dir'|t('twig-components'),
+    name: 'componentDir',
+    value: settings.componentDir,
+    instructions: 'Path relative to the template folder',
+}) }}
