@@ -1,7 +1,15 @@
 {
   "name": "juni/craft-twig-components",
-  "description": "Register Twig components for craft",
+  "description": "Register Twig components for Craft CMS",
   "type": "craft-plugin",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "twig",
+    "twig-components"
+  ],
   "license": "mit",
   "support": {
     "email": "jurjennieuwenhuis@gmail.com",
@@ -17,7 +25,8 @@
   },
   "require-dev": {
     "craftcms/ecs": "dev-main",
-    "craftcms/phpstan": "dev-main"
+    "craftcms/phpstan": "dev-main",
+    "roave/security-advisories": "dev-latest"
   },
   "autoload": {
     "psr-4": {
@@ -45,5 +54,7 @@
       "yiisoft/yii2-composer": true,
       "craftcms/plugin-installer": true
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
